@@ -117,6 +117,10 @@ nav {
   font-size: 1.5rem;
 }
 
+.nav-links li a:hover {
+  color: var(--color-two);
+}
+
 .logo {
   cursor: pointer;
   color: var(--color-snow);
@@ -137,7 +141,7 @@ nav {
 }
 
 .headline h2 {
-  padding: 20px 20px;
+  padding: 20px 70px;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1em;
@@ -218,7 +222,8 @@ video {
 }
 
 .ptext .border {
-  background-color: var(--color-two);
+  /* background-color: var(--color-two); */
+  color: var(--color-snow);
 }
 
 @media (max-width: 568px) {
