@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+:root {
+  --color-one: #fcf6f5ff;
+  --color-two: #006994;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  height: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.8rem;
+  color: var(--color-two);
+  font-family: "Abel", sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  transition: flex 0.4s ease;
+}
+
+.section:hover {
+  flex: 2;
+}
+
+.section .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: background-color 0.8s ease;
+}
+
+.section:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.93);
+}
+
+.section .content {
+  z-index: 2;
+}
+
+#left {
+  background-image: url("/images/nathan-dumlao-6VhPY27jdps-unsplash.jpg");
+}
+
+#center-left {
+  background-image: url("/images/alesia-kazantceva-tDrUL454jok-unsplash.jpg");
+}
+
+#center-right {
+  background-image: url("/images/bangkit-prayogi-tHtRkl6XA4k-unsplash.jpg");
+}
+
+#right {
+  background-image: url("/images/tomas-jasovsky-d5SZqLkpIrY-unsplash.jpg");
+}
+
+.navbar {
+  background: linear-gradient(#0b0c10, #1f2833);
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  position: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li a {
+  transition: all 0.3 ease 0s;
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.logo {
+  cursor: pointer;
+  color: white;
+}
+
+video {
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+#video-1 {
+  height: 100vh;
+}
+
+.video-container {
+  height: 600px;
+}
+
+.video-parallax {
+  -webkit-transition-position: fixed;
+  position: fixed;
+}
+
+.img-2,
+.img-3 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+}
+
+.img-2 {
+  background-image: url("./images/nathan-dumlao-Y3AqmbmtLQI-unsplash.jpg");
+  min-height: 400px;
+}
+
+.img-3 {
+  background-image: url("./images/moritz-knoringer-5QR63diGK5o-unsplash.jpg");
+  min-height: 400px;
+}
+
+.se {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.sec_one {
+  background-color: var(--color-one);
+}
+
+.sec_two,
+.sec_three {
+  background-color: var(--color-two);
+  color: var(--color-one);
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: var(--color-one);
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border {
+  background-color: var(--color-two);
+}
+
+@media (max-width: 568px) {
+  .img2,
+  .img3 {
+    background-attachment: scroll;
+  }
+}
