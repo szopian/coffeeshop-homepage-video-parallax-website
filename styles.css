@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 
 :root {
-  --color-one: #fcf6f5ff;
-  --color-two: #006994;
+  --color-snow: #fffafa;
+  --color-one: #858585;
+  --color-two: #1c1c1c;
 }
 
 * {
@@ -34,7 +35,7 @@ html {
   background-size: cover;
   background-position: center;
   position: relative;
-  color: white;
+  color: var(--color-snow);
   transition: flex 0.4s ease;
 }
 
@@ -61,7 +62,7 @@ html {
 .section .content a {
   text-decoration: none;
   font-size: 30px;
-  color: white;
+  color: var(--color-snow);
   cursor: pointer;
 }
 
@@ -82,7 +83,7 @@ html {
 }
 
 .navbar {
-  background: linear-gradient(#0b0c10, #1f2833);
+  background: linear-gradient(var(--color-two), var(--color-one));
   justify-content: flex-end;
   align-items: center;
   padding: 10px 20px;
@@ -112,32 +113,32 @@ nav {
   display: inline-block;
   padding: 15px;
   text-decoration: none;
-  color: white;
+  color: var(--color-snow);
   font-size: 1.5rem;
 }
 
 .logo {
   cursor: pointer;
-  color: white;
+  color: var(--color-snow);
 }
 
 .headline {
   margin-top: 200px;
   position: relative;
   z-index: 2;
-  color: white;
+  color: var(--color-snow);
 }
 
 .headline h1 {
   padding: 0 70px;
-  font-size: 5em;
+  font-size: 4em;
   font-weight: 800;
   line-height: 1em;
 }
 
 .headline h2 {
   padding: 20px 20px;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1em;
 }
@@ -155,10 +156,6 @@ video {
   transition: 1s opacity;
 }
 
-#video-1 {
-  height: 350px;
-}
-
 .video-container {
   height: 600px;
 }
@@ -169,7 +166,8 @@ video {
 }
 
 .img-2,
-.img-3 {
+.img-3,
+.img-4 {
   position: relative;
   background-position: center;
   background-size: cover;
@@ -188,6 +186,11 @@ video {
   min-height: 400px;
 }
 
+.img-4 {
+  background-image: url("./images/nathan-dumlao-pMW4jzELQCw-unsplash.jpg");
+  min-height: 400px;
+}
+
 .se {
   text-align: center;
   padding: 60px 80px;
@@ -198,7 +201,8 @@ video {
 }
 
 .sec_two,
-.sec_three {
+.sec_three,
+.sec_four {
   background-color: var(--color-two);
   color: var(--color-one);
 }
@@ -211,7 +215,6 @@ video {
   color: var(--color-one);
   font-size: 27px;
   letter-spacing: 8px;
-  text-transform: uppercase;
 }
 
 .ptext .border {
@@ -219,8 +222,9 @@ video {
 }
 
 @media (max-width: 568px) {
-  .img2,
-  .img3 {
+  .img-2,
+  .img-3,
+  .img-4 {
     background-attachment: scroll;
   }
 }
