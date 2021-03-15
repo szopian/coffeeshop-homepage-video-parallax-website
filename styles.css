@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap");
 
 :root {
   --color-snow: #fffafa;
-  --color-one: #858585;
+  --color-one: #a4a4a4;
   --color-two: #1c1c1c;
 }
 
@@ -15,11 +15,14 @@
 body,
 html {
   height: 100%;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.8rem;
   color: var(--color-two);
-  font-family: "Abel", sans-serif;
+  font-family: "Josefin Slab", serif;
+  scroll-behavior: smooth;
+  color: var(--color-snow);
+  text-shadow: 2px 2px 4px var(--color-two);
 }
 
 .container {
@@ -64,6 +67,10 @@ html {
   font-size: 30px;
   color: var(--color-snow);
   cursor: pointer;
+}
+
+.section .content a:hover {
+  color: var(--color-one);
 }
 
 #left {
@@ -124,6 +131,10 @@ nav {
 .logo {
   cursor: pointer;
   color: var(--color-snow);
+}
+
+.navbar nav a {
+  text-decoration: none;
 }
 
 .headline {
@@ -226,10 +237,55 @@ video {
   color: var(--color-snow);
 }
 
+#blog-link {
+  color: var(--color-snow);
+  text-decoration: none;
+}
+
+#blog-link:hover {
+  color: var(--color-one);
+}
+
 @media (max-width: 568px) {
   .img-2,
   .img-3,
   .img-4 {
     background-attachment: scroll;
+  }
+
+  .navbar {
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 3;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: block;
+  }
+
+  .nav-links li a {
+    padding: 0px;
+    font-size: 1rem;
+  }
+
+  .headline h1 {
+    padding: 0 30px;
+    font-size: 3em;
+  }
+
+  .headline h2 {
+    padding: 0px 30px;
+    font-size: 2rem;
+  }
+
+  video {
+    width: 100%;
+    height: 110%;
   }
 }
