@@ -1,1 +1,1 @@
-# video-parallax
+# coffeeshop-homepage-video-parallax-website
