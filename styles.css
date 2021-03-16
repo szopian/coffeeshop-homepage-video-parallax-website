@@ -114,10 +114,10 @@ nav {
 .nav-links li a {
   transition: all 0.3 ease 0s;
   display: inline-block;
-  padding: 15px;
+  padding: 10px;
   text-decoration: none;
   color: var(--color-snow);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .nav-links li a:hover {
