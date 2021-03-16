@@ -44,6 +44,7 @@ html {
 
 .section:hover {
   flex: 2;
+  cursor: pointer;
 }
 
 .section .overlay {
@@ -60,16 +61,11 @@ html {
 
 .section .content {
   z-index: 2;
-}
-
-.section .content a {
-  text-decoration: none;
-  font-size: 30px;
   color: var(--color-snow);
   cursor: pointer;
 }
 
-.section .content a:hover {
+.section .content:hover {
   color: var(--color-one);
 }
 
@@ -193,17 +189,17 @@ video {
 
 .img-2 {
   background-image: url("./images/nathan-dumlao-Y3AqmbmtLQI-unsplash.jpg");
-  min-height: 400px;
+  min-height: 600px;
 }
 
 .img-3 {
   background-image: url("./images/moritz-knoringer-5QR63diGK5o-unsplash.jpg");
-  min-height: 400px;
+  min-height: 600px;
 }
 
 .img-4 {
   background-image: url("./images/nathan-dumlao-pMW4jzELQCw-unsplash.jpg");
-  min-height: 400px;
+  min-height: 600px;
 }
 
 .se {
@@ -257,7 +253,7 @@ video {
     justify-content: flex-end;
     align-items: center;
     padding: 10px 20px;
-    z-index: 3;
+    z-index: -1;
   }
 
   nav {
