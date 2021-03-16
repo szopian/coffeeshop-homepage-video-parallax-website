@@ -86,11 +86,16 @@ html {
 }
 
 .navbar {
-  background: linear-gradient(var(--color-two), var(--color-one));
   justify-content: flex-end;
   align-items: center;
   padding: 10px 20px;
   z-index: 3;
+
+  background: linear-gradient(
+    var(--color-two),
+    var(--color-one) 50%,
+    transparent
+  );
 }
 
 .sticky {
@@ -121,7 +126,7 @@ nav {
 }
 
 .nav-links li a:hover {
-  color: var(--color-two);
+  color: var(--color-one);
 }
 
 .logo {
