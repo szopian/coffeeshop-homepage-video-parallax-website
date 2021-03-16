@@ -136,6 +136,7 @@ nav {
 .headline {
   margin-top: 200px;
   position: relative;
+  display: center;
   z-index: 2;
   color: var(--color-snow);
 }
